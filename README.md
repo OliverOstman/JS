@@ -9,3 +9,6 @@
 * [JS-1.7](JS-1/JS-1.7.html)
 * [JS-1.8](JS-1/JS-1.8.html)
 * [JS-1.9](JS-1/JS-1.9.html)
+
+# JS-2
+* [JS-2 Kaikki Tehtävät]
