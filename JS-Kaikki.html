@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-1</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  function financial(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  console.log('Tämä on JavaScript-ohjelma!');
+
+  let nimi;
+  nimi = prompt('Anna nimesi');
+  console.log('Terve, ' + nimi + '!');
+
+  let säde, pintaAla;
+  säde = prompt('Anna ympyrän säde');
+  säde = säde * säde;
+  pintaAla = Math.PI * säde;
+  console.log('Ympyrän pinta-ala on ' + pintaAla);
+
+  let kanta, korkeus, piiri, pintaAlaK, hypo;
+  kanta = prompt('Anna Suorakulmion Kanta');
+  korkeus = prompt('Anna Suorakulmion Korkeus');
+  pintaAlaK = (kanta * korkeus) / 2;
+  hypo = (kanta * kanta) + (korkeus * korkeus);
+  hypo = Math.sqrt(hypo);
+  piiri = +kanta + +korkeus + +hypo;
+  console.log('Kolmion piiri = ' + piiri + ' ja pinta-ala = ' + pintaAlaK);
+
+  let eka, toka, kolmas, summa, tulo, keskiarvo;
+  eka = prompt('Anna eka luku');
+  toka = prompt('Anna toka luku');
+  kolmas = prompt('Anna kolmas luku');
+  tulo = eka * toka * kolmas;
+  keskiarvo = (+eka + +toka + +kolmas) / 3;
+  summa = +eka + +toka + +kolmas;
+  console.log('Keskiarvo on ' + keskiarvo + ', tulo on ' + tulo + ' ja summa on ' + summa);
+
+  let mass, luoti, naula, leivisko, gram;
+  leivisko = prompt('Anna leivisköt');
+  naula = prompt('Anna naulat');
+  luoti = prompt('Anna luodit');
+  naula = (+leivisko * 20) + +naula;
+  luoti = (+naula * 32) + +luoti;
+  gram = +luoti * 13.3;
+  mass = gram / 1000;
+  mass = Math.floor(mass);
+  gram = gram - (mass * 1000);
+  gram = financial(gram);
+  console.log(mass + ' kilogrammaa ja ' + gram + ' grammaa.');
+
+  let saldo, korko, euro;
+  saldo = prompt('Anna tilin saldo');
+  korko = prompt('Anna tilin vuotuinen korkoprosentti');
+  korko = korko / 100;
+  euro = saldo * korko;
+  saldo = +saldo + +euro;
+  euro = financial(euro);
+  saldo = financial(saldo);
+  console.log('Vuodessa kertyvä korko on ' + euro + '€, Saldo on kasvanut ' + saldo + '€');
+
+  let noppa, noppa2, noppaSumma;
+  noppa = getRandom(1, 7);
+  noppa2 = getRandom(1, 7);
+  noppaSumma = +noppa + +noppa2;
+  console.log('Nopista tuli ' + noppa + ' ja ' + noppa2);
+  console.log('Liikut ' + noppaSumma + ' ruutua');
+
+  let koodi, koodi2, koodi3, koodi4;
+  koodi = getRandom(0, 10);
+  koodi2 = getRandom(0, 10);
+  koodi3 = getRandom(0, 10);
+  console.log('Kolminumeroinen koodisi on ' + koodi + koodi2 + koodi3);
+  koodi = getRandom(1, 7);
+  koodi2 = getRandom(1, 7);
+  koodi3 = getRandom(1, 7);
+  koodi4 = getRandom(1, 7);
+  console.log('Nelinumeroinen koodisi on ' + koodi + koodi2 + koodi3 + koodi4);
+</script>
+</body>
+</html>
