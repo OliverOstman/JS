@@ -8,6 +8,22 @@
 <script>
   'use strict';
 
+  function financial(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
+  let mass, luoti, naula, leivisko, gram;
+  leivisko = prompt('Anna leivisköt');
+  naula = prompt('Anna naulat');
+  luoti = prompt('Anna luodit');
+  naula = (+leivisko * 20) + +naula;
+  luoti = (+naula * 32) + +luoti;
+  gram = +luoti * 13.3;
+  mass = gram / 1000;
+  mass = Math.floor(mass);
+  gram = gram - (mass * 1000);
+  gram = financial(gram);
+  console.log(mass + ' kilogrammaa ja ' + gram + ' grammaa.');
 </script>
 </body>
 </html>

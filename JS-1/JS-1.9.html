@@ -8,6 +8,23 @@
 <script>
   'use strict';
 
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  let koodi, koodi2, koodi3, koodi4;
+  koodi = getRandom(0, 10);
+  koodi2 = getRandom(0, 10);
+  koodi3 = getRandom(0, 10);
+  console.log('Kolminumeroinen koodisi on ' + koodi + koodi2 + koodi3);
+  koodi = getRandom(1, 7);
+  koodi2 = getRandom(1, 7);
+  koodi3 = getRandom(1, 7);
+  koodi4 = getRandom(1, 7);
+  console.log('Nelinumeroinen koodisi on ' + koodi + koodi2 + koodi3 + koodi4);
 </script>
 </body>
 </html>

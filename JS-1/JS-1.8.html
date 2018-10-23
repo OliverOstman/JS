@@ -8,6 +8,19 @@
 <script>
   'use strict';
 
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  let noppa, noppa2, noppaSumma;
+  noppa = getRandom(1, 7);
+  noppa2 = getRandom(1, 7);
+  noppaSumma = +noppa + +noppa2;
+  console.log('Nopista tuli ' + noppa + ' ja ' + noppa2);
+  console.log('Liikut ' + noppaSumma + ' ruutua');
 </script>
 </body>
 </html>

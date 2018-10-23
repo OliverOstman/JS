@@ -8,6 +8,14 @@
 <script>
   'use strict';
 
+  let kanta, korkeus, piiri, pintaAlaK, hypo;
+  kanta = prompt('Anna Suorakulmion Kanta');
+  korkeus = prompt('Anna Suorakulmion Korkeus');
+  pintaAlaK = (kanta * korkeus) / 2;
+  hypo = (kanta * kanta) + (korkeus * korkeus);
+  hypo = Math.sqrt(hypo);
+  piiri = +kanta + +korkeus + +hypo;
+  console.log('Kolmion piiri = ' + piiri + ' ja pinta-ala = ' + pintaAlaK);
 </script>
 </body>
 </html>

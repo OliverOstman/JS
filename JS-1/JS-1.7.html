@@ -8,6 +8,19 @@
 <script>
   'use strict';
 
+  function financial(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
+  let saldo, korko, euro;
+  saldo = prompt('Anna tilin saldo');
+  korko = prompt('Anna tilin vuotuinen korkoprosentti');
+  korko = korko / 100;
+  euro = saldo * korko;
+  saldo = +saldo + +euro;
+  euro = financial(euro);
+  saldo = financial(saldo);
+  console.log('Vuodessa kertyvä korko on ' + euro + '€, Saldo on kasvanut ' + saldo + '€');
 </script>
 </body>
 </html>
