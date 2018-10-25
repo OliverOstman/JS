@@ -20,6 +20,14 @@
 * [JS-2.6](JS-2/JS-2.6.html)
 
 # JS-3
+* [JS-3 Kaikki Tehtävät](JS-3/JS-3Kaikki.html)
+* [JS-3.1](JS-3/JS-3.1.html)
+* [JS-3.2](JS-3/JS-3.2.html)
+* [JS-3.3](JS-3/JS-3.3.html)
+* [JS-3.4](JS-3/JS-3.4.html)
+* [JS-3.5](JS-3/JS-3.5.html)
+* [JS-3.6](JS-3/JS-3.6.html)
+* [JS-3.7](JS-3/JS-3.7.html)
 
 # JS-4
 
