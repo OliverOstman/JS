@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JS-2</title>
 </head>
 <body>
+<script>
+  'use strict';
 
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  let kPituus, ero;
+  kPituus = prompt("Anna kuhan pituus senttimetreinä");
+  if (kPituus < 37) {
+    ero = 37 - kPituus;
+    console.log("Laske kuha takaisin järveen, kuha on " + ero + "cm alle sallitusta pyyntimitasta.");
+  }
+  else {
+    console.log("Hyvä saalis.");
+  }
+
+  let tulos, nimi, random2;
+  nimi = prompt("Mikä on nimesi?");
+  random2 = getRandom(1, 5);
+  switch (random2) {
+    case 1:
+      tulos = "Rohkelikko";
+      break;
+    case 2:
+      tulos = "Luihunen";
+      break;
+    case 3:
+      tulos = "Puuskupuh";
+      break;
+    case 4:
+      tulos = "Korpinkynsi";
+      break;
+    default:
+      tulos = "Virhe";
+  }
+  console.log(nimi + ", olet " + tulos);
+
+  let sukupuoli, hg, tulos2;
+  sukupuoli = prompt("Anna sukupuoli mies/nainen");
+  while (sukupuoli !== "mies" && sukupuoli !== "nainen") {
+    sukupuoli = prompt("Anna sukupuoli mies/nainen");
+  }
+  hg = prompt("Anna hemoglobiiniarvo (g/l)");
+  if (sukupuoli = "mies") {
+    if (hg < 134) {
+      tulos2 = "alhainen";
+    }
+    else if (hg <= 195) {
+      tulos2 = "normaali";
+    }
+    else if (hg > 195) {
+      tulos2 = "korkea";
+    }
+  }
+  else if (sukupuoli = "nainen") {
+    if (hg < 117) {
+      tulos2 = "alhainen";
+    }
+    else if (hg <= 175) {
+      tulos2 = "normaali";
+    }
+    else if (hg > 175) {
+      tulos2 = "korkea";
+    }
+  }
+  console.log("Hemoglobiiniarvosi on " + tulos2);
+
+  let uus;
+</script>
 </body>
 </html>
