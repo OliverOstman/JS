@@ -7,6 +7,39 @@
 <body>
 <script>
   'use strict';
+
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  function percent(x) {
+    return Number.parseFloat(x).toFixed(0);
+  }
+
+  let aKuutio, kiinnostava, times, heitto, times2, nLuku, onnistui, prosentti;
+  times = +100000;
+  onnistui = +0;
+  aKuutio = +prompt("Anna arpakuutioiden lukumäärä");
+  kiinnostava = +prompt("Anna kiinnostava silmälukujen summa");
+  while (times >= 0) {
+    nLuku = +0;
+    times2 = +0;
+    while (times2 <= aKuutio) {
+      heitto = getRandom(1, 7);
+      nLuku = nLuku + heitto;
+      times2++;
+    }
+    if (nLuku === kiinnostava) {
+      onnistui++;
+    }
+    times--;
+  }
+  prosentti = onnistui / 1000;
+  prosentti = percent(prosentti);
+  console.log("Sadasta tuhannesta heitosta " + onnistui + " onnistui, onnistumis prosentti on n. " + prosentti + "%");
 </script>
 </body>
 </html>

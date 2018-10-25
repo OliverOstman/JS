@@ -15,6 +15,10 @@
     return random;
   }
 
+  function percent(x) {
+    return Number.parseFloat(x).toFixed(0);
+  }
+
   let luku, kerto;
   luku = +prompt("Anna kokonaisluku");
   kerto = 0;
@@ -59,6 +63,48 @@
     kuutio--;
   }
   console.log("Silmälukujen summa on " + tulos);
+
+  let luku3, aloitus, aLuku, lopetus;
+  aloitus = 0;
+  luku3 = +prompt("Anna kokonais luku");
+  lopetus = luku3 - 1;
+  if (luku3%1===0 && luku3%luku3===0) {
+    for (aloitus=2; aloitus<lopetus; aloitus++) {
+      if (luku3%aloitus===0) {
+        aLuku = " ei ole alkuluku";
+        break;
+      }
+      else {
+        aLuku = " on alkuluku";
+      }
+    }
+  }
+  else {
+    aLuku = " ei ole alkuluku";
+  }
+  console.log(luku3 + aLuku);
+
+  let aKuutio, kiinnostava, times, heitto, times2, nLuku, onnistui, prosentti;
+  times = +100000;
+  onnistui = +0;
+  aKuutio = +prompt("Anna arpakuutioiden lukumäärä");
+  kiinnostava = +prompt("Anna kiinnostava silmälukujen summa");
+  while (times >= 0) {
+    nLuku = +0;
+    times2 = +0;
+    while (times2 <= aKuutio) {
+      heitto = getRandom(1, 7);
+      nLuku = nLuku + heitto;
+      times2++;
+    }
+    if (nLuku === kiinnostava) {
+      onnistui++;
+    }
+    times--;
+  }
+  prosentti = onnistui / 1000;
+  prosentti = percent(prosentti);
+  console.log("Sadasta tuhannesta heitosta " + onnistui + " onnistui, onnistumis prosentti on n. " + prosentti + "%");
 
   let uus;
 </script>

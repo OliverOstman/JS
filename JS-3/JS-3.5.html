@@ -7,6 +7,26 @@
 <body>
 <script>
   'use strict';
+
+  let luku3, aloitus, aLuku, lopetus;
+  aloitus = 0;
+  luku3 = +prompt("Anna kokonais luku");
+  lopetus = luku3 - 1;
+  if (luku3%1===0 && luku3%luku3===0) {
+    for (aloitus=2; aloitus<lopetus; aloitus++) {
+      if (luku3%aloitus===0) {
+        aLuku = " ei ole alkuluku";
+        break;
+      }
+      else {
+        aLuku = " on alkuluku";
+      }
+    }
+  }
+  else {
+    aLuku = " ei ole alkuluku";
+  }
+  console.log(luku3 + aLuku);
 </script>
 </body>
 </html>
