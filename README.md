@@ -11,4 +11,4 @@
 * [JS-1.9](JS-1/JS-1.9.html)
 
 # JS-2
-* [JS-2 Kaikki Tehtävät]
+* [JS-2 Kaikki Tehtävät](JS-2/JS-Kaikki.html)
