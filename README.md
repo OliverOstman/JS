@@ -12,3 +12,15 @@
 
 # JS-2
 * [JS-2 Kaikki Tehtävät](JS-2/JS-Kaikki.html)
+
+# JS-3
+
+# JS-4
+
+# JS-5
+
+# JS-6
+
+# JS-7
+
+# JS-8
