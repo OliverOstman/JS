@@ -7,6 +7,23 @@
 <body>
 <script>
   'use strict';
+
+  let vuosi;
+  vuosi = prompt("Mikä vuosi on?");
+  if (vuosi%4===0) {
+    console.log("Vuosi on karkausvuosi");
+  }
+  else if (vuosi%100===0) {
+    if (vuosi%400===0) {
+      console.log("Vuosi on karkausvuosi");
+    }
+    else {
+      console.log("Vuosi ei ole karkausvuosi");
+    }
+  }
+  else {
+    console.log("Vuosi ei ole karkausvuosi");
+  }
 </script>
 </body>
 </html>

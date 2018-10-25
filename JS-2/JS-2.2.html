@@ -7,6 +7,34 @@
 <body>
 <script>
   'use strict';
+
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  let tulos, nimi, random2;
+  nimi = prompt("Mikä on nimesi?");
+  random2 = getRandom(1, 5);
+  switch (random2) {
+    case 1:
+      tulos = "Rohkelikko";
+      break;
+    case 2:
+      tulos = "Luihunen";
+      break;
+    case 3:
+      tulos = "Puuskupuh";
+      break;
+    case 4:
+      tulos = "Korpinkynsi";
+      break;
+    default:
+      tulos = "Virhe";
+  }
+  console.log(nimi + ", olet " + tulos);
 </script>
 </body>
 </html>

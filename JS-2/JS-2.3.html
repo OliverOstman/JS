@@ -7,6 +7,36 @@
 <body>
 <script>
   'use strict';
+
+  let sukupuoli, hg, tulos2;
+  sukupuoli = prompt("Anna sukupuoli mies/nainen");
+  while (sukupuoli !== "mies" && sukupuoli !== "nainen") {
+    sukupuoli = prompt("Anna sukupuoli mies/nainen");
+  }
+  hg = prompt("Anna hemoglobiiniarvo (g/l)");
+  if (sukupuoli = "mies") {
+    if (hg < 134) {
+      tulos2 = "alhainen";
+    }
+    else if (hg <= 195) {
+      tulos2 = "normaali";
+    }
+    else if (hg > 195) {
+      tulos2 = "korkea";
+    }
+  }
+  else if (sukupuoli = "nainen") {
+    if (hg < 117) {
+      tulos2 = "alhainen";
+    }
+    else if (hg <= 175) {
+      tulos2 = "normaali";
+    }
+    else if (hg > 175) {
+      tulos2 = "korkea";
+    }
+  }
+  console.log("Hemoglobiiniarvosi on " + tulos2);
 </script>
 </body>
 </html>

@@ -7,6 +7,18 @@
 <body>
 <script>
   'use strict';
+
+  let raha, bussilippu;
+  raha = prompt("Paljonko sinulla on rahaa?");
+  bussilippu = prompt("Paljonko bussilippu maksaa?");
+  if (+raha >= +bussilippu) {
+    raha = raha - bussilippu;
+    console.log("Hyvää matkaa!");
+  }
+  else {
+    console.log("Rahat eivät riitä.");
+  }
+  console.log("Sinulla on enään " + raha + "€");
 </script>
 </body>
 </html>

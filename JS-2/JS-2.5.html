@@ -7,6 +7,22 @@
 <body>
 <script>
   'use strict';
+
+  let confirm, luku, tulos3;
+  confirm = window.confirm("Lasketaanko neliöjuuri?");
+  if (confirm !== false) {
+    luku = prompt("Anna luku");
+    if (luku < 0) {
+      console.log("Negatiivisen luvun neliöjuuri ei ole määritelty");
+    }
+    else {
+      tulos3 = Math.sqrt(luku);
+      console.log("Luvun neliöjuuri on " + tulos3)
+    }
+  }
+  else {
+    console.log("Neliöjuurta ei lasketa");
+  }
 </script>
 </body>
 </html>

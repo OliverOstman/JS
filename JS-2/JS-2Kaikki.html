@@ -52,7 +52,7 @@
     sukupuoli = prompt("Anna sukupuoli mies/nainen");
   }
   hg = prompt("Anna hemoglobiiniarvo (g/l)");
-  if (sukupuoli = "mies") {
+  if (sukupuoli === "mies") {
     if (hg < 134) {
       tulos2 = "alhainen";
     }
@@ -63,7 +63,7 @@
       tulos2 = "korkea";
     }
   }
-  else if (sukupuoli = "nainen") {
+  else if (sukupuoli === "nainen") {
     if (hg < 117) {
       tulos2 = "alhainen";
     }
@@ -76,7 +76,50 @@
   }
   console.log("Hemoglobiiniarvosi on " + tulos2);
 
-  let uus;
+  let raha, bussilippu;
+  raha = prompt("Paljonko sinulla on rahaa?");
+  bussilippu = prompt("Paljonko bussilippu maksaa?");
+  if (+raha >= +bussilippu) {
+    raha = raha - bussilippu;
+    console.log("Hyvää matkaa!");
+  }
+  else {
+    console.log("Rahat eivät riitä.");
+  }
+  console.log("Sinulla on enään " + raha + "€");
+
+  let confirm, luku, tulos3;
+  confirm = window.confirm("Lasketaanko neliöjuuri?");
+  if (confirm !== false) {
+    luku = prompt("Anna luku");
+    if (luku < 0) {
+      console.log("Negatiivisen luvun neliöjuuri ei ole määritelty");
+    }
+    else {
+      tulos3 = Math.sqrt(luku);
+      console.log("Luvun neliöjuuri on " + tulos3)
+    }
+  }
+  else {
+    console.log("Neliöjuurta ei lasketa");
+  }
+
+  let vuosi;
+  vuosi = prompt("Mikä vuosi on?");
+  if (vuosi%4===0) {
+    console.log("Vuosi on karkausvuosi");
+  }
+  else if (vuosi%100===0) {
+    if (vuosi%400===0) {
+      console.log("Vuosi on karkausvuosi");
+    }
+    else {
+      console.log("Vuosi ei ole karkausvuosi");
+    }
+  }
+  else {
+    console.log("Vuosi ei ole karkausvuosi");
+  }
 </script>
 </body>
 </html>

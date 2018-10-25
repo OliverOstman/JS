@@ -7,6 +7,16 @@
 <body>
 <script>
   'use strict';
+
+  let kPituus, ero;
+  kPituus = prompt("Anna kuhan pituus senttimetreinä");
+  if (kPituus < 37) {
+    ero = 37 - kPituus;
+    console.log("Laske kuha takaisin järveen, kuha on " + ero + "cm alle sallitusta pyyntimitasta.");
+  }
+  else {
+    console.log("Hyvä saalis.");
+  }
 </script>
 </body>
 </html>
