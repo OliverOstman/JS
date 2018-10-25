@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS-3</title>
+    <title>JS-3.2</title>
 </head>
 <body>
 <script>
   'use strict';
+
+  let luku2, nJuuri;
+  luku2 = +prompt("Anna luku");
+  while (luku2 < 0) {
+    luku2 = +prompt("Anna positiivinen luku");
+  }
+  nJuuri = Math.sqrt(luku2);
+  console.log("Luvun neliöjuuri on " + nJuuri);
 </script>
 </body>
 </html>

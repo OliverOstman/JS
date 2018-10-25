@@ -2,11 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS-3</title>
+    <title>JS-3.3</title>
 </head>
 <body>
 <script>
   'use strict';
+
+  let aVuosi, lVuosi;
+  aVuosi = +prompt("Anna aloitusvuosi");
+  lVuosi = +prompt("Anna lopetusvuosi");
+  while (aVuosi <= lVuosi) {
+    if (aVuosi%4===0) {
+      console.log(aVuosi + " on karkaus vuosi");
+    }
+    else if (aVuosi%100===0 && aVuosi%400===0) {
+      console.log(aVuosi + " on karkaus vuosi");
+    }
+    aVuosi++;
+  }
 </script>
+
+<ul>
+
+</ul>
+
 </body>
 </html>

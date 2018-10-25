@@ -8,7 +8,64 @@
 <script>
   'use strict';
 
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
 
+  let luku, kerto;
+  luku = +prompt("Anna kokonaisluku");
+  kerto = 0;
+  while (luku > 0) {
+    if (kerto === 0) {
+      kerto = kerto + luku;
+    }
+    else {
+      kerto = kerto * luku;
+    }
+    luku--;
+  }
+  console.log("Luvun kertoma on " + kerto);
+
+  let luku2, nJuuri;
+  luku2 = +prompt("Anna luku");
+  while (luku2 < 0) {
+    luku2 = +prompt("Anna positiivinen luku");
+  }
+  nJuuri = Math.sqrt(luku2);
+  console.log("Luvun neliöjuuri on " + nJuuri);
+
+  let aVuosi, lVuosi;
+  aVuosi = +prompt("Anna aloitusvuosi");
+  lVuosi = +prompt("Anna lopetusvuosi");
+  while (aVuosi <= lVuosi) {
+    if (aVuosi%4===0) {
+      console.log(aVuosi + " on karkaus vuosi");
+    }
+    else if (aVuosi%100===0 && aVuosi%400===0) {
+      console.log(aVuosi + " on karkaus vuosi");
+    }
+    aVuosi++;
+  }
+
+  let kuutio, arpa, tulos;
+  tulos = 0;
+  kuutio = +prompt("Anna arpakuutioiden lukumäärä");
+  while (kuutio > 0) {
+    arpa = getRandom(1, 7);
+    tulos = tulos + arpa;
+    kuutio--;
+  }
+  console.log("Silmälukujen summa on " + tulos);
+
+  let uus;
 </script>
+
+<ul>
+
+</ul>
+
 </body>
 </html>

@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS-3</title>
+    <title>JS-3.1</title>
 </head>
 <body>
 <script>
   'use strict';
+
+  let luku, kerto;
+  luku = +prompt("Anna kokonaisluku");
+  kerto = 0;
+  while (luku > 0) {
+    if (kerto === 0) {
+      kerto = kerto + luku;
+    }
+    else {
+      kerto = kerto * luku;
+    }
+    luku--;
+  }
+  console.log("Luvun kertoma on " + kerto);
 </script>
 </body>
 </html>

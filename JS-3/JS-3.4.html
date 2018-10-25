@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS-3</title>
+    <title>JS-3.4</title>
 </head>
 <body>
 <script>
   'use strict';
+
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  let kuutio, arpa, tulos;
+  tulos = 0;
+  kuutio = +prompt("Anna arpakuutioiden lukumäärä");
+  while (kuutio > 0) {
+    arpa = getRandom(1, 7);
+    tulos = tulos + arpa;
+    kuutio--;
+  }
+  console.log("Silmälukujen summa on " + tulos);
 </script>
 </body>
 </html>
