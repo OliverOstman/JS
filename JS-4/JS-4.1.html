@@ -8,6 +8,14 @@
 <script>
   'use strict';
 
+  let luvut, i;
+  luvut = [];
+  for (i=1; i<6; i++) {
+    luvut[i] = prompt("Anna luku " + i +"/5");
+  }
+  for (i=6-1; i>=1; i--) {
+    console.log("Luku " + i + " = " + luvut[i]);
+  }
 </script>
 </body>
 </html>
