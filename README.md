@@ -30,6 +30,14 @@
 * [JS-3.7](JS-3/JS-3.7.html)
 
 # JS-4
+* [JS-4 Kaikki Tehtävät](JS-4/JS-4Kaikki.html)
+* [JS-4.1](JS-4/JS-4.1.html)
+* [JS-4.2](JS-4/JS-4.2.html)
+* [JS-4.3](JS-4/JS-4.3.html)
+* [JS-4.4](JS-4/JS-4.4.html)
+* [JS-4.5](JS-4/JS-4.5.html)
+* [JS-4.6](JS-4/JS-4.6.html)
+* [JS-4.7](JS-4/JS-4.7.html)
 
 # JS-5
 
