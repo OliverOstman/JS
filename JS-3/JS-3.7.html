@@ -7,6 +7,33 @@
 <body>
 <script>
   'use strict';
+
+  function getRandom(min, max) {
+    let random;
+    random = Math.random() * (max - min) + min;
+    random = Math.floor(random);
+    return random;
+  }
+
+  let i, rLuku, bingo;
+  for (i = 1; i<=25; i++) {
+    rLuku = getRandom(1, 5);
+    switch (rLuku) {
+      case 1:
+        bingo = 4 * i - 3;
+        break;
+      case 2:
+        bingo = 4 * i - 2;
+        break;
+      case 3:
+        bingo = 4 * i - 1;
+        break;
+      case 4:
+        bingo = 4 * i;
+        break;
+    }
+    console.log("Numero " + bingo);
+  }
 </script>
 </body>
 </html>
