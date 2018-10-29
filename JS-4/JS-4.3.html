@@ -8,6 +8,15 @@
 <script>
   'use strict';
 
+  let kNimet, i;
+  kNimet = [];
+  for (i=1; i<=6; i++) {
+    kNimet[i] = prompt("Anna koiran " + i + " nimi");
+  }
+  kNimet.sort();
+  for (i=6-1; i>=1; i--) {
+    console.log("Koiran nimi " + kNimet[i]);
+  }
 </script>
 </body>
 </html>

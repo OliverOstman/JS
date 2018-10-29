@@ -8,6 +8,25 @@
 <script>
   'use strict';
 
+  let anto2, many2, wLuvut2, mediaani, i;
+  mediaani = 0;
+  wLuvut2 = [];
+  many2 = 0;
+  while (true) {
+    anto2 = +prompt("Anna luku, 0 lopettaa");
+    if (anto2 === 0) {
+      break;
+    }
+    else {
+      wLuvut2[many2] = anto2;
+      many2++;
+    }
+  }
+  for (i=0; i<many2; i++) {
+    mediaani = mediaani + +wLuvut2[i];
+  }
+  mediaani = +mediaani / +many2;
+  console.log("Mediaani on " + mediaani);
 </script>
 </body>
 </html>

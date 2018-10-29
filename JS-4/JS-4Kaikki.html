@@ -20,7 +20,84 @@
   let maara, nimet;
   nimet = [];
   maara = prompt("Kuinka monta osallistujaa?");
+  for (i=1; i<=maara; i++) {
+    nimet[i] = prompt("Anna osallistujan nimi");
+  }
+  for (i=1; i<=maara; i++) {
+    console.log("Osallistuja " + i + " = " + nimet[i])
+  }
 
+  let kNimet;
+  kNimet = [];
+  for (i=1; i<=6; i++) {
+    kNimet[i] = prompt("Anna koiran " + i + " nimi");
+  }
+  kNimet.sort();
+  for (i=6-1; i>=1; i--) {
+    console.log("Koiran nimi " + kNimet[i]);
+  }
+
+  let wLuvut, anto, many;
+  wLuvut = [];
+  many = 0;
+  while (true) {
+    anto = +prompt("Anna luku, 0 lopettaa");
+    if (anto === 0) {
+      break;
+    }
+    else {
+      wLuvut[many] = anto;
+      many++;
+    }
+  }
+  wLuvut.sort();
+  wLuvut.reverse();
+  for (i=0; i<=many-1; i++) {
+    console.log(wLuvut[i]);
+  }
+
+  let luku, lukujono, lLuvut, end;
+  lukujono = [];
+  lLuvut = 0;
+  end = 0;
+  while (true) {
+    luku = +prompt("Anna luku väliltä 1-1000");
+    for (i=0; i<=lLuvut; i++) {
+      if (luku === lukujono[i]) {
+        end = 1;
+      }
+    }
+    if (end === 1) {
+      alert("Luku on jo annettu");
+      break;
+    }
+  else {
+      lukujono[lLuvut] = luku;
+      lLuvut++;
+    }
+  }
+
+  let anto2, many2, wLuvut2, mediaani;
+  mediaani = 0;
+  wLuvut2 = [];
+  many2 = 0;
+  while (true) {
+    anto2 = +prompt("Anna luku, 0 lopettaa");
+    if (anto2 === 0) {
+      break;
+    }
+    else {
+      wLuvut2[many2] = anto2;
+      many2++;
+    }
+  }
+  for (i=0; i<many2; i++) {
+    mediaani = mediaani + +wLuvut2[i];
+  }
+  mediaani = +mediaani / +many2;
+  console.log("Mediaani on " + mediaani);
+
+  let uus;
 </script>
 </body>
 </html>

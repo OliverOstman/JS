@@ -8,6 +8,24 @@
 <script>
   'use strict';
 
+  let wLuvut, anto, many, i;
+  wLuvut = [];
+  many = 0;
+  while (true) {
+    anto = +prompt("Anna luku, 0 lopettaa");
+    if (anto === 0) {
+      break;
+    }
+    else {
+      wLuvut[many] = anto;
+      many++;
+    }
+  }
+  wLuvut.sort();
+  wLuvut.reverse();
+  for (i=0; i<=many-1; i++) {
+    console.log(wLuvut[i]);
+  }
 </script>
 </body>
 </html>

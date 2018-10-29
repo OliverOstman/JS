@@ -8,6 +8,16 @@
 <script>
   'use strict';
 
+  let maara, nimet, i;
+  nimet = [];
+  maara = prompt("Kuinka monta osallistujaa?");
+  for (i=1; i<=maara; i++) {
+    nimet[i] = prompt("Anna osallistujan nimi");
+  }
+  for (i=1; i<=maara; i++) {
+    console.log("Osallistuja " + i + " = " + nimet[i])
+  }
+
 </script>
 </body>
 </html>
