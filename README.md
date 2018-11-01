@@ -40,6 +40,12 @@
 * [JS-4.7](JS-4/JS-4.7.html)
 
 # JS-5
+* [JS-5.1](JS-5/js/teht1.js)
+* [JS-5.2](JS-5/js/teht2.js)
+* [JS-5.3](JS-5/js/teht3.js)
+* [JS-5.4](JS-5/js/teht4.js)
+* [JS-5.5](JS-5/css/teht5.css)
+* [JS-5.6](JS-5/js/teht5.js)
 
 # JS-6
 
