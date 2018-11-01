@@ -1,3 +1,7 @@
 li {
     list-style-type: none;
 }
+
+li:nth-of-type(even) {
+    background-color: grey;
+}
