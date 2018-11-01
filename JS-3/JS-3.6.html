@@ -20,26 +20,29 @@
   }
 
   let aKuutio, kiinnostava, times, heitto, times2, nLuku, onnistui, prosentti;
-  times = +100000;
+  times = +10000;
   onnistui = +0;
   aKuutio = +prompt("Anna arpakuutioiden lukumäärä");
   kiinnostava = +prompt("Anna kiinnostava silmälukujen summa");
+  nLuku = 0;
   while (times >= 0) {
-    nLuku = +0;
     times2 = +0;
     while (times2 <= aKuutio) {
+      heitto = 0;
+      nLuku = 0;
       heitto = getRandom(1, 7);
       nLuku = nLuku + heitto;
       times2++;
     }
+    console.log(nLuku);
     if (nLuku === kiinnostava) {
       onnistui++;
     }
     times--;
   }
-  prosentti = onnistui / 1000;
+  prosentti = onnistui / 100;
   prosentti = percent(prosentti);
-  console.log("Sadasta tuhannesta heitosta " + onnistui + " onnistui, onnistumis prosentti on n. " + prosentti + "%");
+  console.log("Kymmenestä tuhannesta heitosta " + onnistui + " onnistui, onnistumis prosentti on n. " + prosentti + "%");
 </script>
 </body>
 </html>
