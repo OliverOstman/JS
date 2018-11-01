@@ -97,7 +97,26 @@
   mediaani = +mediaani / +many2;
   console.log("Mediaani on " + mediaani);
 
-  let uus;
+  let ehdokkaita, aanestajia, eLukujono, aani;
+  eLukujono = [];
+  ehdokkaita = prompt("Paljonko on ehdokkaita?");
+  for (i=1; i<=ehdokkaita; i++) {
+    eLukujono[i] = i;
+  }
+  aanestajia = prompt("Paljonko on äänestäjiä?");
+  for (i=1; i<=aanestajia; i++) {
+    aani = prompt("Äänestäjä " + i + ", ketä äänestät?");
+    if (aani === 0) {
+    }
+    else if (aani = eLukujono[aani]) {
+
+    }
+  }
+  console.log("Vaalin voittaa ehdokas " + eLukujono[1]);
+  for (i=1; i<=ehdokkaita; i++) {
+    console.log(eLukujono[i]);
+  }
+
 </script>
 </body>
 </html>
