@@ -1,0 +1,11 @@
+const puhelin = '<th>Puhelin numero</th>'
+const numero = '<td>+358 40 5555555</td>'
+const eka = document.getElementsByTagName('tr')[0];
+const toka = document.getElementsByTagName('tr')[1];
+document.getElementsByTagName('td')[0].innerHTML = 'Oliver';
+document.getElementsByTagName('td')[1].innerHTML = 'Östman';
+document.getElementsByTagName('td')[2].innerHTML = '';
+document.getElementsByTagName('th')[2].innerHTML = '';
+document.getElementsByTagName('td')[3].innerHTML = 'Vantaa';
+eka.innerHTML = eka.innerHTML + puhelin;
+toka.innerHTML = toka.innerHTML + numero;
