@@ -25,11 +25,10 @@
   aKuutio = +prompt("Anna arpakuutioiden lukumäärä");
   kiinnostava = +prompt("Anna kiinnostava silmälukujen summa");
   nLuku = 0;
-  while (times >= 0) {
+  while (times > 0) {
     times2 = +0;
-    while (times2 <= aKuutio) {
-      heitto = 0;
-      nLuku = 0;
+    nLuku = 0;
+    while (times2 < aKuutio) {
       heitto = getRandom(1, 7);
       nLuku = nLuku + heitto;
       times2++;
