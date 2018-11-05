@@ -48,12 +48,21 @@
 * [JS-5.6](JS-5/js/teht5.js)
 
 # JS-6
+<<<<<<< HEAD
 * [JS-6.1](JS-7/js/teht1.js)
 * [JS-6.2](JS-7/js/teht2.js)
 * [JS-6.3](JS-7/js/teht3.js)
 * [JS-6.4 A](JS-7/js/teht4A.js)
 * [JS-6.4 B](JS-7/js/teht4B.js)
+=======
+
+>>>>>>> f33befdff5959081c95bb324fb646f4667f4debc
 
 # JS-7
+* [JS-7.1](JS-7/js/teht1.js)
+* [JS-7.2](JS-7/js/teht2.js)
+* [JS-7.3](JS-7/js/teht3.js)
+* [JS-7.4 A](JS-7/js/teht4A.js)
+* [JS-7.4 B](JS-7/js/teht4B.js)
 
 # JS-8
