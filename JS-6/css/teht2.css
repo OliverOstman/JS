@@ -1,0 +1,11 @@
+p {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
