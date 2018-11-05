@@ -27,13 +27,16 @@ const img2 = document.getElementsByTagName('img')[2];
 const img3 = document.getElementsByTagName('img')[3];
 img1.addEventListener('click', function() {
   bigImg.src = pics[0].big;
-  document.getElementsByTagName('div')[0].setAttribute('style', 'visible');
+  document.getElementsByTagName('div')[0].setAttribute('class', 'visible');
 });
 img2.addEventListener('click', function() {
   bigImg.src = pics[1].big;
-  document.getElementsByTagName('div')[0].setAttribute('style', 'visible');
+  document.getElementsByTagName('div')[0].setAttribute('class', 'visible');
 });
 img3.addEventListener('click', function() {
   bigImg.src = pics[2].big;
-  document.getElementsByTagName('div')[0].setAttribute('style', 'visible');
+  document.getElementsByTagName('div')[0].setAttribute('class', 'visible');
+});
+bigImg.addEventListener('click', function() {
+  document.getElementsByTagName('div')[0].setAttribute('class', 'hidden');
 });
