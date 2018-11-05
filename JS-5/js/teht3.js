@@ -9,8 +9,8 @@ const kuvat = [
 let i;
 const ul = document.getElementsByTagName('ul')[0];
 for (i=0; i<=4; i++) {
-  const image = '<img src="Here">'
-  const list = '<li></li>'
+  const image = '<img src="Here">';
+  const list = '<li></li>';
   ul.innerHTML = ul.innerHTML + list;
   document.getElementsByTagName('li')[i].innerHTML = image;
   document.getElementsByTagName('img')[i].src = kuvat[i];
