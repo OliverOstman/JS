@@ -12,27 +12,28 @@ const pics = [
     big: 'https://placeimg.com/640/480/tech',
   },
 ];
-let i, s;
-s = 2;
+let i;
 const body = document.getElementsByTagName('body')[0];
 for (i=0; i<=2; i++) {
-  const image = '<img class="list">';
-  const list = '<li></li>';
-  body.innerHTML = list + body.innerHTML;
-  document.getElementsByTagName('li')[0].innerHTML = image;
-  document.getElementsByTagName('img')[0].src = pics[s].thumb;
-  s--;
+  const image = document.createElement('img');
+  image.src = pics[i].thumb;
+  const list = document.createElement('li');
+  body.appendChild(list);
+  list.appendChild(image);
 }
-const bigImg = document.getElementsByTagName('img')[3];
-const img1 = document.getElementsByTagName('img')[0];
-const img2 = document.getElementsByTagName('img')[1];
-const img3 = document.getElementsByTagName('img')[2];
+const bigImg = document.getElementsByTagName('img')[0];
+const img1 = document.getElementsByTagName('img')[1];
+const img2 = document.getElementsByTagName('img')[2];
+const img3 = document.getElementsByTagName('img')[3];
 img1.addEventListener('click', function() {
   bigImg.src = pics[0].big;
+  document.getElementsByTagName('div')[0].setAttribute('style', 'visible');
 });
 img2.addEventListener('click', function() {
   bigImg.src = pics[1].big;
+  document.getElementsByTagName('div')[0].setAttribute('style', 'visible');
 });
 img3.addEventListener('click', function() {
   bigImg.src = pics[2].big;
+  document.getElementsByTagName('div')[0].setAttribute('style', 'visible');
 });
