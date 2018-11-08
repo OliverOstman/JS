@@ -48,7 +48,15 @@
 * [JS-5.6](JS-5/js/teht5.js)
 
 # JS-6
-
+* [JS-6.1](JS-6/JS-6.1.html)
+* [JS-6.2](JS-6/JS-6.2.html)
+* [JS-6.3](JS-6/JS-6.3.html)
+* [JS-6.4](JS-6/JS-6.4.html)
+* [JS-6.5](JS-6/JS-6.5.html)
+* [JS-6.6](JS-6/JS-6.6.html)
+* [JS-6.7](JS-6/JS-6.7.html)
+* ~~[JS-6.8]~~
+* ~~[JS-6.9]~~
 
 # JS-7
 * [JS-7.1](JS-7/js/teht1.js)
