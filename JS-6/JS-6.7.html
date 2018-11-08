@@ -7,6 +7,30 @@
 <body>
 <script>
   'use strict';
+  let luvut;
+  function parilliset(taulukko) {
+    let vastaus, s;
+    vastaus = [];
+    s = 0;
+    for (let i=0; i<taulukko.length; i++) {
+      if (taulukko[i]%2===0) {
+        vastaus[s] = taulukko[i];
+        s++;
+      }
+    }
+
+    return vastaus;
+  }
+  luvut = [];
+  luvut[0] = 2;
+  luvut[1] = 4;
+  luvut[2] = 6;
+  luvut[3] = 7;
+  luvut[4] = 10;
+  luvut[5] = 3;
+  luvut[6] = 1;
+
+  console.log(parilliset(luvut));
 </script>
 </body>
 </html>

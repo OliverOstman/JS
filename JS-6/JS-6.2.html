@@ -7,6 +7,18 @@
 <body>
 <script>
   'use strict';
+
+  let kysymys;
+  function muunnos(gallons) {
+    let litra;
+    litra = gallons * 3.785;
+    return litra;
+  }
+
+  kysymys = +prompt('Anna bensamäärä galloina');
+  console.log(kysymys + ' galloonaa on ' + muunnos(kysymys) + ' litraa');
+
+
 </script>
 </body>
 </html>

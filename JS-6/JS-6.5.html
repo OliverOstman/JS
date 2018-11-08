@@ -7,6 +7,20 @@
 <body>
 <script>
   'use strict';
+  let teksti = [];
+  teksti[0] = "Eka";
+  teksti[1] = "Toka";
+  teksti[2] = "Kolmas";
+  function liita(taulukko) {
+    let vastaus;
+    vastaus = "";
+    for (let i = 0; i<taulukko.length; i++) {
+      vastaus = vastaus + taulukko[i];
+    }
+    return vastaus;
+  }
+
+  console.log(liita(teksti));
 </script>
 </body>
 </html>

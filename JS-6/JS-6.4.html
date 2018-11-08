@@ -7,6 +7,19 @@
 <body>
 <script>
   'use strict';
+  let eLuku, tLuku, kLuku;
+  function Suurin(luku, luku2, luku3) {
+    if (luku > luku2 || luku === luku2 && luku > luku3)
+      return luku;
+    if (luku2 > luku && luku2 > luku3 || luku2 === luku3)
+      return luku2;
+    if (luku3 > luku || luku3 === luku && luku3 > luku2)
+      return luku3;
+  }
+  eLuku = +prompt("Anna eka luku");
+  tLuku = +prompt("Anna toka luku");
+  kLuku = +prompt("Anna kolmas luku");
+  console.log("Suurin luku on " + Suurin(eLuku, tLuku, kLuku));
 </script>
 </body>
 </html>

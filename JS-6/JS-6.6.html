@@ -7,6 +7,28 @@
 <body>
 <script>
   'use strict';
+  let taulukko;
+  function vastaluvuksi(luvut) {
+    for (let i = 0; i<luvut.length; i++) {
+      if (luvut[i] > 0)
+        luvut[i] = -luvut[i];
+      else if (luvut[i] < 0)
+        luvut[i] = Math.abs(luvut[i]);
+      else
+        luvut[i] = 0;
+    }
+  }
+
+  taulukko = [];
+  taulukko[0] = 1;
+  taulukko[1] = 5;
+  taulukko[2] = -6;
+  taulukko[3] = 2;
+  taulukko[4] = -7;
+  vastaluvuksi(taulukko);
+  for (let i = 0; i<taulukko.length; i++) {
+    console.log(taulukko[i]);
+  }
 </script>
 </body>
 </html>
