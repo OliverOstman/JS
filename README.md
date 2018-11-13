@@ -66,3 +66,7 @@
 * [JS-7.4 B](JS-7/js/teht4B.js)
 
 # JS-8
+* [JS-8 Toimiva sivu](http://users.metropolia.fi/~olivero/JSTehtavat/JS-8/Teht.html)
+* [JS-8 Html](JS-8/Teht.html)
+* [JS-8 Js](JS-8/js/Teht.js)
+* [JS-8 Css](JS-8/css/main.css)
