@@ -1,14 +1,13 @@
 'use strict';
-for (let i=0; i<5; i++) {
+for (let i=0; i<10; i++) { /* i<10 koska, look.length tuo näköjään 10 */
   const body = document.getElementsByTagName('body')[0];
   const image = '<img src="">';
   const text = '<p class="normal"></p>';
   const header = '<h1></h1>';
-  const newDiv = '<div></div>'
+  const newDiv = '<div></div>';
   body.innerHTML = body.innerHTML + newDiv;
   const div = document.getElementsByTagName('div')[i];
   div.innerHTML = div.innerHTML + header + text;
-  /* body.innerHTML = body.innerHTML + header + text; */
   document.getElementsByTagName('p')[i].innerHTML = image;
   let p = document.getElementsByTagName('p')[i];
 }
@@ -28,7 +27,7 @@ nappi.addEventListener('click', function(evt) {
 
 
 function etsiminen(look) {
-  for (let i=0; i<5; i++) {
+  for (let i=0; i<look.length; i++) {
     let nimi, kuvaus, linkki, kotisivu, kuva;
     const image = '<img src="">';
     let p = document.getElementsByClassName('normal')[i];
@@ -36,7 +35,7 @@ function etsiminen(look) {
     p.innerHTML = image;
     h.innerHTML = "";
 
-    p.innerHTML = p.innerHTML + "<br>" + (1 + i) + "/5" + "<br>";
+    p.innerHTML = p.innerHTML + "<br>" + (1 + i) + "/" + look.length + "<br>";
 
     if (look[i].show.name === undefined) {
       nimi = "-";
@@ -73,7 +72,6 @@ function etsiminen(look) {
       kuvaus = null;
     } else {
       kuvaus = look[i].show.summary;
-      console.log(kuvaus);
       p.innerHTML = p.innerHTML + 'Ohjelman kuvaus: ' + kuvaus + "<br>";
     }
 
