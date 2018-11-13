@@ -2,8 +2,13 @@
 for (let i=0; i<5; i++) {
   const body = document.getElementsByTagName('body')[0];
   const image = '<img src="">';
-  const text = '<p></p>';
-  body.innerHTML = body.innerHTML + text;
+  const text = '<p class="normal"></p>';
+  const header = '<h1></h1>';
+  const newDiv = '<div></div>'
+  body.innerHTML = body.innerHTML + newDiv;
+  const div = document.getElementsByTagName('div')[i];
+  div.innerHTML = div.innerHTML + header + text;
+  /* body.innerHTML = body.innerHTML + header + text; */
   document.getElementsByTagName('p')[i].innerHTML = image;
   let p = document.getElementsByTagName('p')[i];
 }
@@ -26,32 +31,34 @@ function etsiminen(look) {
   for (let i=0; i<5; i++) {
     let nimi, kuvaus, linkki, kotisivu, kuva;
     const image = '<img src="">';
-    let p = document.getElementsByTagName('p')[i];
+    let p = document.getElementsByClassName('normal')[i];
+    let h = document.getElementsByTagName('h1')[i];
     p.innerHTML = image;
+    h.innerHTML = "";
 
     p.innerHTML = p.innerHTML + "<br>" + (1 + i) + "/5" + "<br>";
 
     if (look[i].show.name === undefined) {
-      nimi = null;
+      nimi = "-";
     } else {
       nimi = look[i].show.name;
     }
-    p.innerHTML = p.innerHTML + "<br>" + 'Ohjelman nimi: ' + nimi + "<br>";
+    h.innerHTML = h.innerHTML + nimi + "<br>";
 
     if (look[i].show.url === undefined || look[i].show.url === null) {
       linkki = "-";
-      p.innerHTML = p.innerHTML + 'Ohjelma linkki: ' + linkki + "<br>";
+      p.innerHTML = p.innerHTML + 'Ohjelman linkki: ' + linkki + "<br>";
     } else {
       linkki = look[i].show.url;
-      p.innerHTML = p.innerHTML + 'Ohjelma linkki: ' + linkki.link(linkki) + "<br>";
+      p.innerHTML = p.innerHTML + 'Ohjelman linkki: ' + linkki.link(linkki) + "<br>";
     }
 
     if (look[i].show.officialSite === undefined || look[i].show.officialSite === null) {
       kotisivu = "-";
-      p.innerHTML = p.innerHTML + 'Ohjelma kotisivu: ' + kotisivu + "<br><br>";
+      p.innerHTML = p.innerHTML + 'Ohjelman kotisivu: ' + kotisivu + "<br><br>";
     } else {
       kotisivu = look[i].show.officialSite;
-      p.innerHTML = p.innerHTML + 'Ohjelma kotisivu: ' + kotisivu.link(kotisivu) + "<br><br>";
+      p.innerHTML = p.innerHTML + 'Ohjelman kotisivu: ' + kotisivu.link(kotisivu) + "<br><br>";
     }
 
 
@@ -67,7 +74,7 @@ function etsiminen(look) {
     } else {
       kuvaus = look[i].show.summary;
       console.log(kuvaus);
-      p.innerHTML = p.innerHTML + 'Ohjelman kuvaus: ' /* + kuvaus */  + "<br><br>";
+      p.innerHTML = p.innerHTML + 'Ohjelman kuvaus: ' + kuvaus + "<br>";
     }
 
     const genres = look[i].show.genres.length;
@@ -84,8 +91,5 @@ function etsiminen(look) {
       const genre = look[i].show.genres[s];
       p.innerHTML = p.innerHTML + 'Ohjelman genre ' + (1 + s) + ": " + genre + "<br>";
     }
-
-    /* let image = document.createElement('img');
-    let p = document.createElement('p'); */
   }
 }

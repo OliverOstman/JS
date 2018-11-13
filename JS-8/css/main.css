@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hakuteksti {
+    width: 10rem;
+}
+
+#hakunappi {
+    color: black;
+}
+
+.normal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
